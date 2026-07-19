@@ -345,6 +345,39 @@ section h2::before {
   font-size: 0.85rem;
 }
 
+.project-card {
+  display: block;
+  color: inherit;
+}
+
+.project-card:hover {
+  text-decoration: none;
+}
+
+.project-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.external-arrow {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.project-card:hover .external-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.project-url {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 /* about photo */
 .about-photo {
   width: 96px;
